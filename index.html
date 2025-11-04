@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Flappy Game</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="container">
+    <canvas id="game"></canvas>
+
+    <!-- Start overlay -->
+    <div id="startScreen" class="overlay">
+      <img id="logo" src="assets/logo.png" alt="logo">
+      <button id="startBtn" class="big-btn">Start Game</button>
+      <p class="hint">Tap or press Space to flap</p>
+    </div>
+
+    <!-- Game over / win overlay -->
+    <div id="endScreen" class="overlay hidden">
+      <img id="endImg" src="assets/lose_img.png" alt="end">
+      <div class="end-controls">
+        <button id="restartBtn" class="big-btn">Restart</button>
+      </div>
+    </div>
+
+    <!-- Score display -->
+    <div id="score">0</div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
